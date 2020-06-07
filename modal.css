@@ -1,0 +1,81 @@
+#model{ 
+ height: 100vh;
+ width: 100vw;
+ background-color: #0E0A14ef; /* O alfa pode ir de 0 a f e é usado quando há cores hexadecimais colocando no final 
+ do id da cor dois ff para o mais escuro e dois 00 para invisivel*/
+ position: fixed;
+ top:0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 400ms;
+}
+#model.hide {
+    display: none; 
+
+}
+#model .content{ 
+    color:white;
+    width: 420px;
+}
+#model .header{ 
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+#model .header a{ 
+    background-image: url('../extras-aula-1/x.svg');
+    width: 20px;
+    height:20px;
+    display:flex;
+    font-size: 0.1px;
+}
+#model .header h1{ 
+    color:white;
+    font-size: 36px;
+    line-height: 32px;
+   
+
+}
+#model form label{ 
+    font-size: 14px;
+    line-height: 16px;
+    display:block;
+    margin-bottom: 8px;
+}
+#model form .field{
+    display:flex; 
+
+}
+#model form input{ 
+    flex:1;
+    background-color: var(--basic-color);
+    border-radius: 8px 0 0 8px;
+    border:0;
+    padding:16px 24px;
+    font-size:16px;
+    color:#6c6c80
+}
+#model form button{ 
+    width:62px;
+    height: 62px;
+    background-color: var(--primary-color);
+    border:0;
+    border-radius:0 8px 8px 0;
+
+}
+#model form button:hover{ 
+    background-color: #2fb85e;
+}
+
+/* Isto é para o modal point created */
+#model.point .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#model.point h1{ 
+    color: white;
+    margin-top: 32px;
+}
